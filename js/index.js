@@ -65,6 +65,9 @@ $("#9").click(function(){
 });
 
 function numbers(val){
+  if($(".display").html()==="Too long!")
+    $(".display").empty();
+  
   if(val==="0"){
     if(CheckLength() &&  /[^0]/g.test($(".display").text())){
       CheckStatus();
@@ -311,3 +314,4 @@ $("#equals").click(function(){
   if(/\./g.test(expression))
     decimalset=1;
 });
+ 
