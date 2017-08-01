@@ -227,7 +227,7 @@ $("#backspace").click(function(){
     expression=expression.slice(0,expression.length-1); 
   }
   
-  else if(temp.length===1 || (temp==="0.")) 
+  else if(temp.length===1 || (temp==="0.") || temp==="Too long!") 
    $("#clear").click();
 
   else{
